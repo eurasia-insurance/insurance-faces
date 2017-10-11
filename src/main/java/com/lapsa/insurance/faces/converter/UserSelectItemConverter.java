@@ -6,10 +6,11 @@ import javax.faces.convert.FacesConverter;
 
 import org.omnifaces.converter.SelectItemsConverter;
 
-import com.lapsa.commons.function.MyObjects;
-import com.lapsa.commons.function.MyOptionals;
-import com.lapsa.commons.function.MyPredicates;
 import com.lapsa.insurance.domain.crm.User;
+
+import tech.lapsa.java.commons.function.MyObjects;
+import tech.lapsa.java.commons.function.MyOptionals;
+import tech.lapsa.java.commons.function.MyPredicates;
 
 @FacesConverter(forClass = User.class)
 public class UserSelectItemConverter extends SelectItemsConverter {
