@@ -1,4 +1,4 @@
-package com.lapsa.insurance.faces.converter;
+package tech.lapsa.insurance.faces.converter;
 
 import java.util.Locale;
 

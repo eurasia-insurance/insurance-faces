@@ -1,4 +1,4 @@
-package com.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.elements;
 
 import static com.lapsa.insurance.elements.InsuranceProductType.*;
 

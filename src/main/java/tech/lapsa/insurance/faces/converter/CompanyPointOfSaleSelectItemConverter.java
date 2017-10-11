@@ -1,4 +1,4 @@
-package com.lapsa.insurance.faces.converter;
+package tech.lapsa.insurance.faces.converter;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
