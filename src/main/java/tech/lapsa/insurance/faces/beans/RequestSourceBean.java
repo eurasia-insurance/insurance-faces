@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.RequestSource.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.RequestSource;
 
-@Named("requestSourceService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("RequestSource")
 @ApplicationScoped
-public class RequestSourceServiceBean implements FacesSelectItemListingService<RequestSource> {
+public class RequestSourceBean implements ListingBean<RequestSource> {
 
     @Override
     public RequestSource[] getAll() {

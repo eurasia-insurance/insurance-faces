@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.DeliveryTimeSlot.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.DeliveryTimeSlot;
 
-@Named("deliveryTimeSlotService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("DeliveryTimeSlot")
 @ApplicationScoped
-public class DeliveryTimeSlotServiceBean implements FacesSelectItemListingService<DeliveryTimeSlot> {
+public class DeliveryTimeSlotBean implements ListingBean<DeliveryTimeSlot> {
 
     @Override
     public DeliveryTimeSlot[] getAll() {

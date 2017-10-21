@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.SteeringWheelLocation.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.SteeringWheelLocation;
 
-@Named("steeringWheelLocationService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("SteeringWheelLocation")
 @ApplicationScoped
-public class SteeringWheelLocationServiceBean implements FacesSelectItemListingService<SteeringWheelLocation> {
+public class SteeringWheelLocationBean implements ListingBean<SteeringWheelLocation> {
 
     @Override
     public SteeringWheelLocation[] getAll() {

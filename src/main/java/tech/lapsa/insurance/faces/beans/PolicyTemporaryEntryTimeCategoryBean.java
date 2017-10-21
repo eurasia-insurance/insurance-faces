@@ -1,17 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.PolicyTemporaryEntryTimeCategory.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.PolicyTemporaryEntryTimeCategory;
 
-@Named("policyTemporaryEntryTimeCategoryService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("PolicyTemporaryEntryTimeCategory")
 @ApplicationScoped
-public class PolicyTemporaryEntryTimeCategoryServiceBean
-	implements FacesSelectItemListingService<PolicyTemporaryEntryTimeCategory> {
+public class PolicyTemporaryEntryTimeCategoryBean implements ListingBean<PolicyTemporaryEntryTimeCategory> {
 
     @Override
     public PolicyTemporaryEntryTimeCategory[] getAll() {

@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.ObtainingMethod.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.ObtainingMethod;
 
-@Named("obtainingMethodService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("ObtainingMethod")
 @ApplicationScoped
-public class ObtainingMethodServiceBean implements FacesSelectItemListingService<ObtainingMethod> {
+public class ObtainingMethodBean implements ListingBean<ObtainingMethod> {
 
     @Override
     public ObtainingMethod[] getAll() {

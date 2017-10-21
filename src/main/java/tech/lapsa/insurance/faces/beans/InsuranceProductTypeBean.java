@@ -1,17 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.InsuranceProductType.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.InsuranceProductType;
 
-@Named("insuranceProductTypeService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("InsuranceProductType")
 @ApplicationScoped
-public class InsuranceProductTypeServiceBean
-	implements FacesSelectItemListingService<InsuranceProductType> {
+public class InsuranceProductTypeBean implements ListingBean<InsuranceProductType> {
 
     @Override
     public InsuranceProductType[] getAll() {

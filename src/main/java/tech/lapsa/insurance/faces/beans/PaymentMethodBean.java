@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.PaymentMethod.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.PaymentMethod;
 
-@Named("paymentMethodService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("PaymentMethod")
 @ApplicationScoped
-public class PaymentMethodServiceBean implements FacesSelectItemListingService<PaymentMethod> {
+public class PaymentMethodBean implements ListingBean<PaymentMethod> {
 
     @Override
     public PaymentMethod[] getAll() {

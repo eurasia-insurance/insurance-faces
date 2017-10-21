@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.CancelationReason.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.CancelationReason;
 
-@Named("cancelationReasonService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("CancelationReason")
 @ApplicationScoped
-public class CancelationReasonServiceBean implements FacesSelectItemListingService<CancelationReason> {
+public class CancelationReasonBean implements ListingBean<CancelationReason> {
 
     @Override
     public CancelationReason[] getAll() {

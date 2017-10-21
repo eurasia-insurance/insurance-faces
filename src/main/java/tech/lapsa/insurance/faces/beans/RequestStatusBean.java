@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.RequestStatus.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.RequestStatus;
 
-@Named("requestStatusService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("RequestStatus")
 @ApplicationScoped
-public class RequestStatusServiceBean implements FacesSelectItemListingService<RequestStatus> {
+public class RequestStatusBean implements ListingBean<RequestStatus> {
 
     @Override
     public RequestStatus[] getAll() {

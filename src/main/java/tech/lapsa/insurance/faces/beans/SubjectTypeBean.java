@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.SubjectType.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.SubjectType;
 
-@Named("subjectTypeService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("SubjectType")
 @ApplicationScoped
-public class SubjectTypeServiceBean implements FacesSelectItemListingService<SubjectType> {
+public class SubjectTypeBean implements ListingBean<SubjectType> {
 
     @Override
     public SubjectType[] getAll() {

@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.Sex.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.Sex;
 
-@Named("sexService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("Sex")
 @ApplicationScoped
-public class SexServiceBean implements FacesSelectItemListingService<Sex> {
+public class SexBean implements ListingBean<Sex> {
 
     @Override
     public Sex[] getAll() {

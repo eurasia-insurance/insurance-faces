@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.CascoDeductibleFullRate.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.CascoDeductibleFullRate;
 
-@Named("cascoDeductibleFullRateService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("CascoDeductibleFullRate")
 @ApplicationScoped
-public class CascoDeductibleFullRateServiceBean implements FacesSelectItemListingService<CascoDeductibleFullRate> {
+public class CascoDeductibleFullRateBean implements ListingBean<CascoDeductibleFullRate> {
 
     @Override
     public CascoDeductibleFullRate[] getAll() {

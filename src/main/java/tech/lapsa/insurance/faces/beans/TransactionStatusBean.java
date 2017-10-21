@@ -1,17 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.TransactionStatus.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.TransactionStatus;
 
-@Named("transactionStatusService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("TransactionStatus")
 @ApplicationScoped
-public class TransactionStatusServiceBean
-	implements FacesSelectItemListingService<TransactionStatus> {
+public class TransactionStatusBean implements ListingBean<TransactionStatus> {
 
     @Override
     public TransactionStatus[] getAll() {

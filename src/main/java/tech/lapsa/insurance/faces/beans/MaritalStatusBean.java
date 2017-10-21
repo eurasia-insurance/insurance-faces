@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.MaritalStatus.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.MaritalStatus;
 
-@Named("maritalStatusService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("MaritalStatus")
 @ApplicationScoped
-public class MaritalStatusServiceBean implements FacesSelectItemListingService<MaritalStatus> {
+public class MaritalStatusBean implements ListingBean<MaritalStatus> {
 
     @Override
     public MaritalStatus[] getAll() {

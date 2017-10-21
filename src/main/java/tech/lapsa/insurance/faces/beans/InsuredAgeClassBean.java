@@ -1,16 +1,17 @@
-package tech.lapsa.insurance.faces.elements;
+package tech.lapsa.insurance.faces.beans;
 
 import static com.lapsa.insurance.elements.InsuredAgeClass.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.faces.services.FacesSelectItemListingService;
 import com.lapsa.insurance.elements.InsuredAgeClass;
 
-@Named("insuredAgeClassService")
+import tech.lapsa.javax.faces.beans.localization.ListingBean;
+
+@Named("InsuredAgeClass")
 @ApplicationScoped
-public class InsuredAgeClassServiceBean implements FacesSelectItemListingService<InsuredAgeClass> {
+public class InsuredAgeClassBean implements ListingBean<InsuredAgeClass> {
 
     @Override
     public InsuredAgeClass[] getAll() {
