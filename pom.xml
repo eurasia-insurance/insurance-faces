@@ -21,7 +21,7 @@
 		<!-- tech -->
 		<javax-faces-commons.version>1.0</javax-faces-commons.version>
 		<!-- APIs -->
-		<insurance-lib.version>2.3</insurance-lib.version>
+		<insurance-lib.version>2.4-SNAPSHOT</insurance-lib.version>
 	</properties>
 
 	<dependencyManagement>
