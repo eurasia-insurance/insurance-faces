@@ -19,7 +19,7 @@
 		<javax-javaee-bom.version>7.0</javax-javaee-bom.version>
 		<java-commons.version>1.1-SNAPSHOT</java-commons.version>
 		<!-- tech -->
-		<javax-faces-commons.version>1.0</javax-faces-commons.version>
+		<javax-faces-commons.version>1.1-SNAPSHOT</javax-faces-commons.version>
 		<!-- APIs -->
 		<insurance-lib.version>2.4-SNAPSHOT</insurance-lib.version>
 	</properties>

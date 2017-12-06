@@ -7,7 +7,7 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.VehicleAgeClass;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("VehicleAgeClass")
 @ApplicationScoped
