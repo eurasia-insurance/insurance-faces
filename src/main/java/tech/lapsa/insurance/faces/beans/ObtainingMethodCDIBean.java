@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("ObtainingMethod")
 @ApplicationScoped
-public class ObtainingMethodBean implements ListingBean<ObtainingMethod> {
+public class ObtainingMethodCDIBean implements ListingBean<ObtainingMethod> {
 
     @Override
     public ObtainingMethod[] getAll() {

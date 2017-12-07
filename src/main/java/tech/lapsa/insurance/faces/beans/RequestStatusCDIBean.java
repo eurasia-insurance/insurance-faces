@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("RequestStatus")
 @ApplicationScoped
-public class RequestStatusBean implements ListingBean<RequestStatus> {
+public class RequestStatusCDIBean implements ListingBean<RequestStatus> {
 
     @Override
     public RequestStatus[] getAll() {

@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("MaritalStatus")
 @ApplicationScoped
-public class MaritalStatusBean implements ListingBean<MaritalStatus> {
+public class MaritalStatusCDIBean implements ListingBean<MaritalStatus> {
 
     @Override
     public MaritalStatus[] getAll() {

@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("InsuranceRequestType")
 @ApplicationScoped
-public class InsuranceRequestTypeBean implements ListingBean<InsuranceRequestType> {
+public class InsuranceRequestTypeCDIBean implements ListingBean<InsuranceRequestType> {
 
     @Override
     public InsuranceRequestType[] getAll() {

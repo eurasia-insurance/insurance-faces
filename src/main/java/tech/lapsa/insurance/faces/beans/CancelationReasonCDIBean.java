@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("CancelationReason")
 @ApplicationScoped
-public class CancelationReasonBean implements ListingBean<CancelationReason> {
+public class CancelationReasonCDIBean implements ListingBean<CancelationReason> {
 
     @Override
     public CancelationReason[] getAll() {

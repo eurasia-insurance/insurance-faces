@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("VehicleClass")
 @ApplicationScoped
-public class VehicleClassBean implements ListingBean<VehicleClass> {
+public class VehicleClassCDIBean implements ListingBean<VehicleClass> {
 
     @Override
     public VehicleClass[] getAll() {

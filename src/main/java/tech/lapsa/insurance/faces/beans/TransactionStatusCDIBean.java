@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("TransactionStatus")
 @ApplicationScoped
-public class TransactionStatusBean implements ListingBean<TransactionStatus> {
+public class TransactionStatusCDIBean implements ListingBean<TransactionStatus> {
 
     @Override
     public TransactionStatus[] getAll() {

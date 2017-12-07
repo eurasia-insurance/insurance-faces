@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("SubjectType")
 @ApplicationScoped
-public class SubjectTypeBean implements ListingBean<SubjectType> {
+public class SubjectTypeCDIBean implements ListingBean<SubjectType> {
 
     @Override
     public SubjectType[] getAll() {

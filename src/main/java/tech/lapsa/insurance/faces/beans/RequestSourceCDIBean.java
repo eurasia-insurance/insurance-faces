@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("RequestSource")
 @ApplicationScoped
-public class RequestSourceBean implements ListingBean<RequestSource> {
+public class RequestSourceCDIBean implements ListingBean<RequestSource> {
 
     @Override
     public RequestSource[] getAll() {

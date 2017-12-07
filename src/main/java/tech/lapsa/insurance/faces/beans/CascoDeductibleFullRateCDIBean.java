@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("CascoDeductibleFullRate")
 @ApplicationScoped
-public class CascoDeductibleFullRateBean implements ListingBean<CascoDeductibleFullRate> {
+public class CascoDeductibleFullRateCDIBean implements ListingBean<CascoDeductibleFullRate> {
 
     @Override
     public CascoDeductibleFullRate[] getAll() {

@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("ProgressStatus")
 @ApplicationScoped
-public class ProgressStatusBean implements ListingBean<ProgressStatus> {
+public class ProgressStatusCDIBean implements ListingBean<ProgressStatus> {
 
     @Override
     public ProgressStatus[] getAll() {

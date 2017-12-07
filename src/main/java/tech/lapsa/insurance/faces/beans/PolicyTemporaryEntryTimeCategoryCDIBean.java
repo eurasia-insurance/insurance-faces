@@ -11,7 +11,7 @@ import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("PolicyTemporaryEntryTimeCategory")
 @ApplicationScoped
-public class PolicyTemporaryEntryTimeCategoryBean implements ListingBean<PolicyTemporaryEntryTimeCategory> {
+public class PolicyTemporaryEntryTimeCategoryCDIBean implements ListingBean<PolicyTemporaryEntryTimeCategory> {
 
     @Override
     public PolicyTemporaryEntryTimeCategory[] getAll() {
