@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.IdentityCardType;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("IdentityCardType")
 @ApplicationScoped
-public class IdentityCardTypeBean implements ListingBean<IdentityCardType> {
+public class IdentityCardTypeCDIBean implements ListingBean<IdentityCardType> {
 
     @Override
     public IdentityCardType[] getAll() {

@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.TransactionProblem;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("TransactionProblem")
 @ApplicationScoped
-public class TransactionProblemBean implements ListingBean<TransactionProblem> {
+public class TransactionProblemCDIBean implements ListingBean<TransactionProblem> {
 
     @Override
     public TransactionProblem[] getAll() {

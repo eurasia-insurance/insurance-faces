@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.DeliveryTimeSlot;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("DeliveryTimeSlot")
 @ApplicationScoped
-public class DeliveryTimeSlotBean implements ListingBean<DeliveryTimeSlot> {
+public class DeliveryTimeSlotCDIBean implements ListingBean<DeliveryTimeSlot> {
 
     @Override
     public DeliveryTimeSlot[] getAll() {

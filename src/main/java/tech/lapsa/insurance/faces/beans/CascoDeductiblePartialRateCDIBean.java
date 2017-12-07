@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.CascoDeductiblePartialRate;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("CascoDeductiblePartialRate")
 @ApplicationScoped
-public class CascoDeductiblePartialRateBean
+public class CascoDeductiblePartialRateCDIBean
 	implements ListingBean<CascoDeductiblePartialRate> {
 
     @Override

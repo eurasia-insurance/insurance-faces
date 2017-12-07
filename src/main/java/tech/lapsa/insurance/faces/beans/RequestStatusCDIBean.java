@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.RequestStatus;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("RequestStatus")
 @ApplicationScoped
-public class RequestStatusBean implements ListingBean<RequestStatus> {
+public class RequestStatusCDIBean implements ListingBean<RequestStatus> {
 
     @Override
     public RequestStatus[] getAll() {

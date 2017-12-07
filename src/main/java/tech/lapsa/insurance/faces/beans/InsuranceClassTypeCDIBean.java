@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.InsuranceClassType;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("InsuranceClassType")
 @ApplicationScoped
-public class InsuranceClassTypeBean implements ListingBean<InsuranceClassType> {
+public class InsuranceClassTypeCDIBean implements ListingBean<InsuranceClassType> {
 
     @Override
     public InsuranceClassType[] getAll() {

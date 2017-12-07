@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.InsuredExpirienceClass;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("InsuredExpirienceClass")
 @ApplicationScoped
-public class InsuredExpirienceClassBean implements ListingBean<InsuredExpirienceClass> {
+public class InsuredExpirienceClassCDIBean implements ListingBean<InsuredExpirienceClass> {
 
     @Override
     public InsuredExpirienceClass[] getAll() {

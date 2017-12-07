@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.RequestSource;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("RequestSource")
 @ApplicationScoped
-public class RequestSourceBean implements ListingBean<RequestSource> {
+public class RequestSourceCDIBean implements ListingBean<RequestSource> {
 
     @Override
     public RequestSource[] getAll() {

@@ -7,11 +7,11 @@ import javax.inject.Named;
 
 import com.lapsa.insurance.elements.ObtainingMethod;
 
-import tech.lapsa.javax.faces.beans.localization.ListingBean;
+import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
 @Named("ObtainingMethod")
 @ApplicationScoped
-public class ObtainingMethodBean implements ListingBean<ObtainingMethod> {
+public class ObtainingMethodCDIBean implements ListingBean<ObtainingMethod> {
 
     @Override
     public ObtainingMethod[] getAll() {
