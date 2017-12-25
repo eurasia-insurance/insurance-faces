@@ -21,8 +21,7 @@
 		<payara-bom.version>4.1.2-2-SNAPSHOT</payara-bom.version>
 		<!-- tech -->
 		<javax-faces-commons.version>1.1-SNAPSHOT</javax-faces-commons.version>
-		<!-- APIs -->
-		<insurance-lib.version>2.4-SNAPSHOT</insurance-lib.version>
+		<insurance-domain.version>2.4-SNAPSHOT</insurance-domain.version>
 	</properties>
 
 	<dependencyManagement>
@@ -55,13 +54,10 @@
 				<artifactId>javax-faces-commons</artifactId>
 				<version>${javax-faces-commons.version}</version>
 			</dependency>
-			<!-- oldies -->
 			<dependency>
-				<groupId>com.lapsa.insurance-lib</groupId>
-				<artifactId>insurance-root</artifactId>
-				<version>${insurance-lib.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+				<groupId>tech.lapsa.insurance</groupId>
+				<artifactId>insurance-domain</artifactId>
+				<version>${insurance-domain.version}</version>
 			</dependency>
 			<!-- external -->
 			<dependency>
@@ -88,7 +84,7 @@
 		</dependency>
 		<!-- oldies -->
 		<dependency>
-			<groupId>com.lapsa.insurance-lib</groupId>
+			<groupId>tech.lapsa.insurance</groupId>
 			<artifactId>insurance-domain</artifactId>
 			<scope>compile</scope>
 			<optional>false</optional>
