@@ -59,12 +59,6 @@
 				<artifactId>insurance-domain</artifactId>
 				<version>${insurance-domain.version}</version>
 			</dependency>
-			<!-- external -->
-			<dependency>
-				<groupId>org.omnifaces</groupId>
-				<artifactId>omnifaces</artifactId>
-				<version>2.3</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -105,13 +99,6 @@
 			<groupId>javax.faces</groupId>
 			<artifactId>javax.faces-api</artifactId>
 			<scope>provided</scope>
-		</dependency>
-		<!-- external -->
-		<dependency>
-			<groupId>org.omnifaces</groupId>
-			<artifactId>omnifaces</artifactId>
-			<scope>compile</scope>
-			<optional>true</optional>
 		</dependency>
 		<!-- test -->
 		<dependency>
