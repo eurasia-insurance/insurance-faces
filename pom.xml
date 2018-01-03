@@ -129,7 +129,7 @@
 	<scm>
 		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/insurance/faces.git</connection>
 		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/insurance/faces.git</developerConnection>
-		<tag>v3.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
