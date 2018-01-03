@@ -82,6 +82,12 @@
 			<artifactId>insurance-domain</artifactId>
 			<scope>compile</scope>
 			<optional>false</optional>
+			<exclusions>
+				<exclusion>
+					<artifactId>javax-jpa-commons</artifactId>
+					<groupId>tech.lapsa.javax</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- Payara -->
 		<dependency>
