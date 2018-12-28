@@ -120,9 +120,9 @@
 	</dependencies>
 
 	<scm>
-		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/insurance/faces.git</connection>
-		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/insurance/faces.git</developerConnection>
-		<tag>v3.1.1</tag>
+		<connection>scm:git:https://github.com/eurasia-insurance/insurance-faces.git</connection>
+		<developerConnection>scm:git:https://github.com/eurasia-insurance/insurance-faces.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
