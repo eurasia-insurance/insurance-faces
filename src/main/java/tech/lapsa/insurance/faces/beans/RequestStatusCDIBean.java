@@ -27,4 +27,9 @@ public class RequestStatusCDIBean implements ListingBean<RequestStatus> {
     public RequestStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public RequestStatus byName(String name) {
+	return RequestStatus.valueOf(name);
+    }
 }

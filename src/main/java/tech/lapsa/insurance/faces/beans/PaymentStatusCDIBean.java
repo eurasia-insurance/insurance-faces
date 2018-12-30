@@ -27,4 +27,9 @@ public class PaymentStatusCDIBean implements ListingBean<PaymentStatus> {
     public PaymentStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public PaymentStatus byName(String name) {
+	return PaymentStatus.valueOf(name);
+    }
 }

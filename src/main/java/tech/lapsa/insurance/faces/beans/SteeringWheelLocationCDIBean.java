@@ -27,4 +27,9 @@ public class SteeringWheelLocationCDIBean implements ListingBean<SteeringWheelLo
     public SteeringWheelLocation[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public SteeringWheelLocation byName(String name) {
+	return SteeringWheelLocation.valueOf(name);
+    }
 }

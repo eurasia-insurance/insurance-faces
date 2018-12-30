@@ -27,4 +27,9 @@ public class InsuranceRequestTypeCDIBean implements ListingBean<InsuranceRequest
     public InsuranceRequestType[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public InsuranceRequestType byName(String name) {
+	return InsuranceRequestType.valueOf(name);
+    }
 }

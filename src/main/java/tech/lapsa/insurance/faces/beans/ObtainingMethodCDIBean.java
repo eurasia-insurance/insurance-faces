@@ -27,4 +27,9 @@ public class ObtainingMethodCDIBean implements ListingBean<ObtainingMethod> {
     public ObtainingMethod[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public ObtainingMethod byName(String name) {
+	return ObtainingMethod.valueOf(name);
+    }
 }

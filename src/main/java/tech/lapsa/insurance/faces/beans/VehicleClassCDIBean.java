@@ -31,4 +31,9 @@ public class VehicleClassCDIBean implements ListingBean<VehicleClass> {
     public VehicleClass[] getValidForMotorTPL() {
 	return VehicleClass.validForMotorTPLValues();
     }
+
+    @Override
+    public VehicleClass byName(String name) {
+	return VehicleClass.valueOf(name);
+    }
 }

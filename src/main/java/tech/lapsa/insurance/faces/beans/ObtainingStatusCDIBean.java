@@ -27,4 +27,9 @@ public class ObtainingStatusCDIBean implements ListingBean<ObtainingStatus> {
     public ObtainingStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public ObtainingStatus byName(String name) {
+	return ObtainingStatus.valueOf(name);
+    }
 }

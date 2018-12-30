@@ -27,4 +27,9 @@ public class SubjectTypeCDIBean implements ListingBean<SubjectType> {
     public SubjectType[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public SubjectType byName(String name) {
+	return SubjectType.valueOf(name);
+    }
 }

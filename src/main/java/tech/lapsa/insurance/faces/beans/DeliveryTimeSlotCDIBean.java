@@ -27,4 +27,9 @@ public class DeliveryTimeSlotCDIBean implements ListingBean<DeliveryTimeSlot> {
     public DeliveryTimeSlot[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public DeliveryTimeSlot byName(String name) {
+	return DeliveryTimeSlot.valueOf(name);
+    }
 }

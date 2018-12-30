@@ -27,4 +27,9 @@ public class InsuredExpirienceClassCDIBean implements ListingBean<InsuredExpirie
     public InsuredExpirienceClass[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public InsuredExpirienceClass byName(String name) {
+	return InsuredExpirienceClass.valueOf(name);
+    }
 }

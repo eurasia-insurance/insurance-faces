@@ -28,4 +28,9 @@ public class CascoDeductiblePartialRateCDIBean
     public CascoDeductiblePartialRate[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public CascoDeductiblePartialRate byName(String name) {
+	return CascoDeductiblePartialRate.valueOf(name);
+    }
 }
