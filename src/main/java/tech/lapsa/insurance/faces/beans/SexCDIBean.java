@@ -27,4 +27,9 @@ public class SexCDIBean implements ListingBean<Sex> {
     public Sex[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public Sex byName(String name) {
+	return Sex.valueOf(name);
+    }
 }

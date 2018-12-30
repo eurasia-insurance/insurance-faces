@@ -27,4 +27,9 @@ public class TransactionProblemCDIBean implements ListingBean<TransactionProblem
     public TransactionProblem[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public TransactionProblem byName(String name) {
+	return TransactionProblem.valueOf(name);
+    }
 }

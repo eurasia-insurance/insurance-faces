@@ -27,4 +27,9 @@ public class MaritalStatusCDIBean implements ListingBean<MaritalStatus> {
     public MaritalStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public MaritalStatus byName(String name) {
+	return MaritalStatus.valueOf(name);
+    }
 }

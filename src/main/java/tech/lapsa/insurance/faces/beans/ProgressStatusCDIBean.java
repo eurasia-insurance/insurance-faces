@@ -27,4 +27,9 @@ public class ProgressStatusCDIBean implements ListingBean<ProgressStatus> {
     public ProgressStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public ProgressStatus byName(String name) {
+	return ProgressStatus.valueOf(name);
+    }
 }

@@ -27,4 +27,9 @@ public class TransactionStatusCDIBean implements ListingBean<TransactionStatus> 
     public TransactionStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public TransactionStatus byName(String name) {
+	return TransactionStatus.valueOf(name);
+    }
 }

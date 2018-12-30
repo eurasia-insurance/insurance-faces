@@ -27,4 +27,9 @@ public class VehicleAgeClassCDIBean implements ListingBean<VehicleAgeClass> {
     public VehicleAgeClass[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public VehicleAgeClass byName(String name) {
+	return VehicleAgeClass.valueOf(name);
+    }
 }

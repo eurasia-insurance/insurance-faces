@@ -27,4 +27,9 @@ public class IdentityCardTypeCDIBean implements ListingBean<IdentityCardType> {
     public IdentityCardType[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public IdentityCardType byName(String name) {
+	return IdentityCardType.valueOf(name);
+    }
 }

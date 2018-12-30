@@ -27,4 +27,9 @@ public class CascoDeductibleFullRateCDIBean implements ListingBean<CascoDeductib
     public CascoDeductibleFullRate[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public CascoDeductibleFullRate byName(String name) {
+	return CascoDeductibleFullRate.valueOf(name);
+    }
 }

@@ -27,4 +27,9 @@ public class CancelationReasonCDIBean implements ListingBean<CancelationReason> 
     public CancelationReason[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public CancelationReason byName(String name) {
+	return CancelationReason.valueOf(name);
+    }
 }

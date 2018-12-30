@@ -27,4 +27,9 @@ public class PolicyTemporaryEntryTimeCategoryCDIBean implements ListingBean<Poli
     public PolicyTemporaryEntryTimeCategory[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public PolicyTemporaryEntryTimeCategory byName(String name) {
+	return PolicyTemporaryEntryTimeCategory.valueOf(name);
+    }
 }

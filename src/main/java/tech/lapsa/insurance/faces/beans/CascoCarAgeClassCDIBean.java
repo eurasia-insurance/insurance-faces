@@ -27,4 +27,9 @@ public class CascoCarAgeClassCDIBean implements ListingBean<CascoCarAgeClass> {
     public CascoCarAgeClass[] getNonSelectable() {
 	return nonSelectableValues();
     }
+
+    @Override
+    public CascoCarAgeClass byName(String name) {
+	return CascoCarAgeClass.valueOf(name);
+    }
 }
