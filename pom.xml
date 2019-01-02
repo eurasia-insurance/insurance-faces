@@ -9,7 +9,7 @@
 
 	<groupId>tech.lapsa.insurance</groupId>
 	<artifactId>insurance-faces</artifactId>
-	<version>CURRENT-SNAPSHOT</version>
+	<version>20190103</version>
 	<packaging>jar</packaging>
 
 	<name>Insurance Lib : Faces utility</name>
@@ -122,7 +122,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/eurasia-insurance/insurance-faces.git</connection>
 		<developerConnection>scm:git:https://github.com/eurasia-insurance/insurance-faces.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v20190103</tag>
 	</scm>
 
 </project>
