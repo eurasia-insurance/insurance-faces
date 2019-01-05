@@ -1,35 +1,35 @@
 package tech.lapsa.insurance.faces.beans;
 
-import static com.lapsa.insurance.elements.TransactionStatus.*;
+import static com.lapsa.insurance.elements.ContractStatus.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.insurance.elements.TransactionStatus;
+import com.lapsa.insurance.elements.ContractStatus;
 
 import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
-@Named("TransactionStatus")
+@Named("ContractStatus")
 @ApplicationScoped
-public class TransactionStatusCDIBean implements ListingBean<TransactionStatus> {
+public class ContractStatusCDIBean implements ListingBean<ContractStatus> {
 
     @Override
-    public TransactionStatus[] getAll() {
+    public ContractStatus[] getAll() {
 	return values();
     }
 
     @Override
-    public TransactionStatus[] getSelectable() {
+    public ContractStatus[] getSelectable() {
 	return selectableValues();
     }
 
     @Override
-    public TransactionStatus[] getNonSelectable() {
+    public ContractStatus[] getNonSelectable() {
 	return nonSelectableValues();
     }
 
     @Override
-    public TransactionStatus byName(String name) {
-	return TransactionStatus.valueOf(name);
+    public ContractStatus byName(String name) {
+	return ContractStatus.valueOf(name);
     }
 }
