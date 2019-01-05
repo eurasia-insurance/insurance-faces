@@ -1,35 +1,35 @@
 package tech.lapsa.insurance.faces.beans;
 
-import static com.lapsa.insurance.elements.TransactionProblem.*;
+import static com.lapsa.insurance.elements.RequestCancelationReason.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import com.lapsa.insurance.elements.TransactionProblem;
+import com.lapsa.insurance.elements.RequestCancelationReason;
 
 import tech.lapsa.javax.faces.commons.beans.localization.ListingBean;
 
-@Named("TransactionProblem")
+@Named("RequestCancelationReason")
 @ApplicationScoped
-public class TransactionProblemCDIBean implements ListingBean<TransactionProblem> {
+public class RequestCancelationReasonCDIBean implements ListingBean<RequestCancelationReason> {
 
     @Override
-    public TransactionProblem[] getAll() {
+    public RequestCancelationReason[] getAll() {
 	return values();
     }
 
     @Override
-    public TransactionProblem[] getSelectable() {
+    public RequestCancelationReason[] getSelectable() {
 	return selectableValues();
     }
 
     @Override
-    public TransactionProblem[] getNonSelectable() {
+    public RequestCancelationReason[] getNonSelectable() {
 	return nonSelectableValues();
     }
 
     @Override
-    public TransactionProblem byName(String name) {
-	return TransactionProblem.valueOf(name);
+    public RequestCancelationReason byName(String name) {
+	return RequestCancelationReason.valueOf(name);
     }
 }
